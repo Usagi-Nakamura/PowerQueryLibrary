@@ -18,7 +18,9 @@
                     in
                         List.Cons( ans, @List.Allocate(List.Tail(l), n - ans))
 
-    ,Text.ToHankaku = (t as text) =>
+    ,Text.ToHankaku = (t as nullable text) =>
+
+        if t = null then null else
 
         let
 
