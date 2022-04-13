@@ -5,8 +5,9 @@
 ```M
 Expression.Evaluate(
     Text.FromBinary(
-        Web.Contents(["https://github.com/Usagi-Nakamura/PowerQueryLibrary/blob/main/Library.pq")
+        Web.Contents("https://raw.githubusercontent.com/Usagi-Nakamura/PowerQueryLibrary/main/Library.pq")
     )
+    ,#shared
 )
 ```
 クエリの名前は例えばLibraryとします。   
