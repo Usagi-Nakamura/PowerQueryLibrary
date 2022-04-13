@@ -5,7 +5,7 @@
 ```M
 Expression.Evaluate(
     Text.FromBinary(
-        Web.Contents(["[githubのpath]")
+        Web.Contents(["https://github.com/Usagi-Nakamura/PowerQueryLibrary/blob/main/Library.pq")
     )
 )
 ```
