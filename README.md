@@ -19,4 +19,4 @@ Expression.Evaluate(
 ```M
 List.Allocate = Library[List.Allocate],
 ```
-List.Allocateが、ライブラリの中で定義されている関数を使っていても、上記のコードだけで動きます。
+List.Allocateは、ライブラリの中で定義されている関数を使っていますが、上記のコードだけで動きます。
