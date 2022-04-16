@@ -8,6 +8,15 @@
 
     ,List.Tail = (l as list) => List.LastN(l, List.Count(l) - 1)
 
+    ,List.ZipWith = 
+        (f as function, la as list, lb as list) =>
+            let 
+                ans = f( List.Head(la), List.Head(lb) )
+            in
+                if List.Count(la) = 1
+                    then { ans }
+                    else List.Cons( ans, @List.ZipWith(f, List.Tail(la), List.Tail(lb)))
+
     ,List.Allocate =
         (l as list, n as number) =>
             if List.Count(l) = 1
